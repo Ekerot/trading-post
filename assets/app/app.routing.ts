@@ -1,6 +1,6 @@
-import { AuthComponent } from './../auth/auth.component';
-import { BuyBookComponent } from './../books/buy-books/buy-books.component';
-import { SellBookComponent } from './../books/sell-books/sell-books.component';
+import { AuthComponent } from './auth/auth.component';
+import { BuyBookComponent } from './books/buy-books/buy-books.component';
+import { SellBookComponent } from './books/sell-books/sell-books.component';
 import { Routes, RouterModule } from "@angular/router";
 
 const APP_ROUTES: Routes = [

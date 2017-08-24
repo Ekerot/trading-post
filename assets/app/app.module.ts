@@ -1,11 +1,11 @@
+import { BuyBookComponent } from './books/buy-books/buy-books.component';
+import { SellBookComponent } from './books/sell-books/sell-books.component';
+import { AuthComponent } from './auth/auth.component';
 import { HeaderComponent } from './header.component';
 import { routing } from './app.routing';
-import { SellBookComponent } from './../books/sell-books/sell-books.component';
-import { BuyBookComponent } from './../books/buy-books/buy-books.component';
-import { BookComponent } from './../books/books.component';
+import { BookComponent } from './books/books.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AuthComponent } from "../auth/auth.component";
 
 import { AppComponent } from "./app.component";
 
@@ -13,10 +13,11 @@ import { AppComponent } from "./app.component";
     declarations: [
         AppComponent,
         BookComponent,
-        BuyBookComponent,
-        SellBookComponent,
+        HeaderComponent,
         AuthComponent,
-        HeaderComponent
+        BookComponent,
+        SellBookComponent,
+        BuyBookComponent
     ],
     imports: [BrowserModule, routing],
     bootstrap: [AppComponent]

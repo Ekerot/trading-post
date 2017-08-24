@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     selector: 'app-buy-books',
     template: `
         <div class="row">
-            <app-buy-book-input></app-buy-book-input>
+            <app-buy-book></app-buy-book>
         </div>
         <hr>
         <div class="row">

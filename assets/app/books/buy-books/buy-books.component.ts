@@ -1,9 +1,18 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-buy-book',
-    templateUrl: './buy-books.component.html'
+    selector: 'app-buy-books',
+    template: `
+        <div class="row">
+            <app-buy-book-input></app-buy-book-input>
+        </div>
+        <hr>
+        <div class="row">
+            <app-buy-book-list></app-buy-book-list>
+        </div>
+    `
+    
 })
-export class BuyBookComponent {
+export class BuyBooksComponent{
 
 }

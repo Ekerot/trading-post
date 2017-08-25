@@ -1,6 +1,5 @@
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
-import { AuthComponent } from './auth/auth.component';
 import { BuyBookComponent } from './books/buy-books/buy-book.component';
 import { SellBookComponent } from './books/sell-books/sell-book.component';
 import { Routes, RouterModule } from "@angular/router";

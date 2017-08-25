@@ -5,7 +5,7 @@ import { SellBookComponent } from './books/sell-books/sell-book.component';
 import { Routes, RouterModule } from "@angular/router";
 
 const APP_ROUTES: Routes = [
-    {path: '', redirectTo: '/', pathMatch: 'full'},
+    {path: '', redirectTo: '/signup', pathMatch: 'full'},
     {path: 'sell-book', component: SellBookComponent},
     {path: 'buy-book', component: BuyBookComponent},
     {path: 'login', component: LoginComponent},

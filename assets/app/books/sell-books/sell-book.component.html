@@ -1,15 +1,15 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
-            <h1>Sell book</h1>
+        <div class="col-md-5">
+            <h1 style="text-align:center;">Sell book</h1>
             <hr>
             <div class="form-group">
-                <label for="title">Book's title</label>
-                <input type="text" class="form-control" placeholder="Book's title">
+                <label for="title">Book title</label>
+                <input type="text" class="form-control" placeholder="Book title">
             </div>
             <div class="form-group">
-                <label for="Author">Book's author</label>
-                <input type="text" class="form-control" placeholder="Book's author">
+                <label for="Author">Book author</label>
+                <input type="text" class="form-control" placeholder="Book author">
             </div>
             <div class="form-group">
                 <label for="publish">Year of publish</label>
@@ -19,7 +19,21 @@
                 <label for="description">Description of the book</label>
                 <textarea name="description" id="desc" cols="30" rows="10" class="form-control"></textarea>
             </div>
+
+            <hr>
+            <div class="form-group">
+                <label for="price">Set price</label>
+                <input type="text" class="form-control" placeholder="Your price SEK">
+            </div>
+            <button class="btn btn-success">Sell book</button>
+        </div>
+        <div class="col-md-7">
+            <h1 style="text-align: center;">Book listings</h1>
+            <hr>
+            <!-- FETCH ALL BOOKS AND DISPLAY HERE -->
+            <div class="form-group">
+                <label for="description">Display books here</label>
+            </div>
         </div>
     </div>
-
 </div>

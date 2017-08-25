@@ -3,8 +3,8 @@ var Schema = mongoose.Schema;
 var mongooseUniqueValidator = require('mongoose-unique-validator');
 
 var schema = new Schema({
-    firstname: {type: string, required: true},
-    lastname: {type: string, required: true},
+    firstName: {type: string, required: true},
+    lastName: {type: string, required: true},
     password: {type: string, required: true},
     email: {type: string, required: true, unique: true},
     books: [{type: Schema.Types.ObjectId, ref: 'Book'}]

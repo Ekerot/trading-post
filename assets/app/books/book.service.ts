@@ -2,15 +2,27 @@ import { Book } from './book.model';
 
 
 export class BookService {
-    books: Book[] = [];
+    
+    // Central books array to store and manage all the messages in the frontend.
+    private books: Book[] = [];
 
-    sellBook(book: Book){
+    // Adds a book to the array
+    addBook(book: Book){
         this.books.push(book);
+        console.log(this.books);
     }
 
-    displayBooks(){
+    // Returns the messages array so that we have access to the array
+    getBooks(){
         return this.books;
     }
+
+    // Remove one element/book from the array
+    deleteBook(book: Book){
+        this.books.splice(this.books.indexOf(book), 1);
+    }
+
+
 
 
 }

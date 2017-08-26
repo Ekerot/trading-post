@@ -14,6 +14,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { NgModule } from '@angular/core';
 import { AppComponent } from "./app.component";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -36,7 +37,7 @@ import { AppComponent } from "./app.component";
         SignupComponent,
         
     ],
-    imports: [BrowserModule, routing],
+    imports: [BrowserModule, routing, FormsModule],
     bootstrap: [AppComponent]
 })
 export class AppModule {

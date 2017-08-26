@@ -26,6 +26,7 @@ export class SellBookInputComponent {
 
         )
         this.bookService.addBook(book);
+        form.resetForm();
     }
 
 }

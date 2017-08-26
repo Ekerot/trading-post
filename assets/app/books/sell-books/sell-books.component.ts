@@ -3,15 +3,17 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-sell-books',
     template: `
+    <div class="container">
         <div class="row">
-            <app-sell-book></app-sell-book>
+            <div class="col-md-5">
+                <app-sell-book-input></app-sell-book-input>
+            </div>
+            <div class="col-md-7">
+                <app-sell-book-list></app-sell-book-list>
+            </div>
         </div>
-        <hr>
-        <div class="row">
-            <app-sell-book-list></app-sell-book-list>
-        </div>
+    </div>
     `
-
 })
 export class SellBooksComponent {
 

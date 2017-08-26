@@ -5,13 +5,14 @@ import { BuyBooksComponent } from './books/buy-books/buy-books.component';
 import { BuyBookListComponent } from './books/buy-books/buy-book-list.component';
 import { SellBookListComponent } from './books/sell-books/sell-book-list.component';
 import { BuyBookComponent } from './books/buy-books/buy-book.component';
-import { SellBookComponent } from './books/sell-books/sell-book.component';
+import { SellBookInputComponent } from './books/sell-books/sell-book-input.component';
 import { HeaderComponent } from './header.component';
 import { routing } from './app.routing';
 import { BookComponent } from './books/books.component';
-import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 
+import { NgModule } from '@angular/core';
 import { AppComponent } from "./app.component";
 
 @NgModule({
@@ -19,15 +20,21 @@ import { AppComponent } from "./app.component";
         AppComponent,
         BookComponent,
         HeaderComponent,
+        
         BookComponent,
-        SellBookComponent,
+
+        SellBookInputComponent,
         BuyBookComponent,
+
+        SellBooksComponent,
+        BuyBooksComponent,
+
         SellBookListComponent,
         BuyBookListComponent,
-        BuyBooksComponent,
-        SellBooksComponent,
+
         LoginComponent,
-        SignupComponent
+        SignupComponent,
+        
     ],
     imports: [BrowserModule, routing],
     bootstrap: [AppComponent]

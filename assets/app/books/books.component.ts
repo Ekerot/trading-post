@@ -1,3 +1,4 @@
+import { BookService } from './book.service';
 import { Book } from './book.model';
 import { Component, Input } from '@angular/core';
 
@@ -7,4 +8,14 @@ import { Component, Input } from '@angular/core';
 })
 export class BookComponent {
     @Input() inputBook: Book;
+
+    constructor(private bookService: BookService){}
+
+    onEdit(){
+
+    }
+
+    onRemove(){
+        this.bookService.removeBook(this.inputBook);
+    }
 }

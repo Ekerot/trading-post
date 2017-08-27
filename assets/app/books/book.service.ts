@@ -18,7 +18,7 @@ export class BookService {
     }
 
     // Remove one element/book from the array
-    deleteBook(book: Book){
+    removeBook(book: Book){
         this.books.splice(this.books.indexOf(book), 1);
     }
 

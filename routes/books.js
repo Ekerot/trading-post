@@ -3,7 +3,7 @@ var router = express.Router();
 
 var Book = require('../models/book')
 
-// Post to database. Add to the book model reaching the frontend via req.body
+// Post to database. Add to the book model/mongoDB reaching the frontend via req.body
 router.post('/', function (req, res, next) {
     var book = new Book({
         title:  req.body.title,
@@ -20,9 +20,9 @@ router.post('/', function (req, res, next) {
             });
         }
         res.status(201).json({
-            message: 'Saved book',
+            book: 'Saved book',
             obj: result
-        })
+        });
     });
 });
 

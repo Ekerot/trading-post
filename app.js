@@ -35,7 +35,7 @@ app.use(function (req, res, next) {
 });
 
 // Handle incoming routes with appRoutes variable
-app.use('/sell-book', bookRoutes);
+app.use('/book', bookRoutes);
 app.use('/', appRoutes);
 
 // catch 404 and forward to error handler

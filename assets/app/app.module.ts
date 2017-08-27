@@ -16,6 +16,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from "./app.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { HttpModule } from "@angular/http";
 
 @NgModule({
     declarations: [
@@ -39,7 +40,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
         LogoutComponent
         
     ],
-    imports: [BrowserModule, routing, FormsModule, ReactiveFormsModule],
+    imports: [BrowserModule, routing, FormsModule, ReactiveFormsModule, HttpModule],
     bootstrap: [AppComponent]
 })
 export class AppModule {

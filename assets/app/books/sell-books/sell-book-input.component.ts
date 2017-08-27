@@ -16,16 +16,19 @@ export class SellBookInputComponent {
 
     // Add book to database
     onSubmit(form: NgForm){
-        console.log(form);
         const book = new Book(
             form.value.title,
             form.value.author,
             form.value.publishYear,
             form.value.price,
             form.value.description
-
-        )
-        this.bookService.addBook(book);
+        );
+        
+        this.bookService.addBook(book)
+            .subscribe(
+                data => console.log(data),
+                error => console.error(error)
+            );
         form.resetForm();
     }
 

@@ -2,11 +2,11 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var schema = new Schema({
-    title: {type: string, required: true},
-    author: {type: string, required: true},
-    publishYear: {type: string, required: true},
-    description: {type: string, required: true},
-    price: {type: string, required: true},
+    title: {type: String, required: true},
+    author: {type: String, required: true},
+    publishYear: {type: String, required: true},
+    description: {type: String, required: true},
+    price: {type: String, required: true},
     user: {type: Schema.Types.ObjectId, required: true, ref: 'User'}
 });
 

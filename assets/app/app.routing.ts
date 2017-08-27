@@ -1,3 +1,4 @@
+import { LogoutComponent } from './auth/logout/logout.component';
 import { SellBooksComponent } from './books/sell-books/sell-books.component';
 import { SellBookListComponent } from './books/sell-books/sell-book-list.component';
 import { SignupComponent } from './auth/signup/signup.component';
@@ -11,7 +12,8 @@ const APP_ROUTES: Routes = [
     {path: 'sell-book', component: SellBooksComponent},
     {path: 'buy-book', component: BuyBookComponent},
     {path: 'login', component: LoginComponent},
-    {path: 'signup', component: SignupComponent}
+    {path: 'signup', component: SignupComponent},
+    {path: 'logout', component: LogoutComponent}
 ]
 
 export const routing = RouterModule.forRoot(APP_ROUTES);

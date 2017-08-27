@@ -1,3 +1,4 @@
+import { LogoutComponent } from './auth/logout/logout.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SellBooksComponent } from './books/sell-books/sell-books.component';
@@ -35,6 +36,7 @@ import { FormsModule } from "@angular/forms";
 
         LoginComponent,
         SignupComponent,
+        LogoutComponent
         
     ],
     imports: [BrowserModule, routing, FormsModule],
